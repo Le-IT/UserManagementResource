@@ -1,6 +1,8 @@
-package com.nodiac.bzl.UserManagementResource.domain;
+package com.nodiac.bzl.UserManagementResource.util;
 
 import com.bzloeffler.intern.bestellformular.azure.domain.IntranetUser;
+import com.nodiac.bzl.UserManagementResource.domain.InternalOrder;
+import com.nodiac.bzl.UserManagementResource.domain.IntranetUser;
 
 import javax.persistence.*;
 import java.util.List;

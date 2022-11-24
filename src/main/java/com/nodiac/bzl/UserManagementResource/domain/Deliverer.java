@@ -1,12 +1,14 @@
 package com.nodiac.bzl.UserManagementResource.domain;
 
+import com.nodiac.bzl.UserManagementResource.common.BaseDTO;
+
 import javax.persistence.*;
 import java.util.List;
 import java.util.Objects;
 
 @Entity
 @Table(name="DELIVERERS")
-public class Deliverer {
+public class Deliverer extends BaseDTO<Long> {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

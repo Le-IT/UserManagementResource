@@ -1,11 +1,13 @@
 package com.nodiac.bzl.UserManagementResource.domain;
 
+import com.nodiac.bzl.UserManagementResource.common.BaseDTO;
+
 import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
 @Table(name = "BRANCHES")
-public class Branch {
+public class Branch extends BaseDTO<Long> {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;

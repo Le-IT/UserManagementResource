@@ -2,13 +2,14 @@ package com.nodiac.bzl.UserManagementResource.domain;
 
 
 import com.bzloeffler.intern.bestellformular.interneBestellung.util.IntegerWrapper;
+import com.nodiac.bzl.UserManagementResource.common.BaseDTO;
 
 import javax.persistence.*;
 import java.util.Map;
 
 @Entity
 @Table(name="WAREHOUSES")
-public class Warehouse {
+public class Warehouse extends BaseDTO<Long> {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

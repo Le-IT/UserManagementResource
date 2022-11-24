@@ -2,6 +2,7 @@ package com.nodiac.bzl.UserManagementResource.domain;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.nodiac.bzl.UserManagementResource.common.BaseDTO;
 
 import javax.persistence.*;
 import java.util.List;
@@ -14,7 +15,7 @@ import java.util.List;
 @Entity
 @Embeddable
 @Table(name = "SCHICHTEN")
-public class Schicht {
+public class Schicht extends BaseDTO<Long> {
 
 
     @Id

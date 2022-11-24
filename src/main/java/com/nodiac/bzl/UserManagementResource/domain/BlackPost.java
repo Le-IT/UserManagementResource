@@ -1,6 +1,7 @@
 package com.nodiac.bzl.UserManagementResource.domain;
 
 import com.bzloeffler.intern.bestellformular.azure.domain.IntranetUser;
+import com.nodiac.bzl.UserManagementResource.common.BaseDTO;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -12,7 +13,7 @@ import java.util.List;
 @Setter
 @Entity
 @Table(name = "BEITRAG")
-public class BlackPost {
+public class BlackPost extends BaseDTO<Long> {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id", nullable = false)

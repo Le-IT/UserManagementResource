@@ -1,5 +1,7 @@
 package com.nodiac.bzl.UserManagementResource.domain;
 
+import com.nodiac.bzl.UserManagementResource.common.BaseDTO;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +9,7 @@ import java.util.Objects;
 
 @Entity
 @Table(name="PRODUCTS")
-public class Product {
+public class Product extends BaseDTO<Long> {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

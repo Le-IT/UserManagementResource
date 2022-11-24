@@ -1,4 +1,4 @@
-package com.nodiac.bzl.UserManagementResource.enums;
+package com.nodiac.bzl.UserManagementResource.util.enums;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;

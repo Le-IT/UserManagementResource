@@ -3,6 +3,8 @@ package com.nodiac.bzl.UserManagementResource.domain;
 import com.bzloeffler.intern.bestellformular.azure.domain.IntranetUser;
 import com.bzloeffler.intern.bestellformular.util.enums.EnOrderStatus;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.nodiac.bzl.UserManagementResource.common.BaseDTO;
+import com.nodiac.bzl.UserManagementResource.util.OrderManager;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -12,7 +14,7 @@ import java.util.Objects;
 @Entity
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Table(name="INTERNALORDER")
-public class InternalOrder {
+public class InternalOrder extends BaseDTO<Long> {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

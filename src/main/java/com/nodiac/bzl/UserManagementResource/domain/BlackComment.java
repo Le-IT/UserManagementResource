@@ -1,6 +1,7 @@
 package com.nodiac.bzl.UserManagementResource.domain;
 
 
+import com.nodiac.bzl.UserManagementResource.common.BaseDTO;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -11,7 +12,7 @@ import java.util.Date;
 @Setter
 @Entity
 @Table(name = "KOMMENTAR")
-public class BlackComment {
+public class BlackComment extends BaseDTO<Long> {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id", nullable = false)

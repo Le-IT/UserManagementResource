@@ -1,6 +1,7 @@
 package com.nodiac.bzl.UserManagementResource.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.nodiac.bzl.UserManagementResource.common.BaseDTO;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -13,7 +14,7 @@ import java.util.List;
 @Entity
 @Embeddable
 @Table(name = "TEAMS")
-public class ITeam {
+public class ITeam extends BaseDTO<Long> {
 
 
     @Id

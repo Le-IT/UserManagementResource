@@ -2,6 +2,7 @@ package com.nodiac.bzl.UserManagementResource.domain;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.nodiac.bzl.UserManagementResource.common.BaseDTO;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -15,7 +16,7 @@ import java.util.List;
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Entity
 @Table(name = "USERS")
-public class IntranetUser {
+public class IntranetUser extends BaseDTO<Long> {
 
 
     @Id
